@@ -39,13 +39,12 @@ public class Task_03 {
             System.out.println("Указатель не может указывать на null!");
         } catch (IndexOutOfBoundsException ex) {
             System.out.println("Массив выходит за пределы своего размера!");
-        } catch (
-                Throwable ex) {    // в задании неправильно был выставлен приоритет исключений. Надо от частного к общему.
+        } catch (Throwable ex) {    // в задании неправильно был выставлен приоритет исключений. Надо от частного к общему.
             System.out.println("Что-то пошло не так...");
         }
     }
 
-    public static void printSum(Integer a, Integer b) throws FileNotFoundException {
+    public static void printSum(Integer a, Integer b) {  // убрал исключение FileNotFoundException  т.к. оно здесь не нужно
         System.out.println(a + b);
     }
 
