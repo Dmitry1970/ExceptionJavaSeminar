@@ -1,4 +1,4 @@
-package Seminar_2.Homework_2;
+package Homework_2;
 
 /*
 Если необходимо, исправьте данный код:
